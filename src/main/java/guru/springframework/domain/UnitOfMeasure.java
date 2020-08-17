@@ -10,6 +10,8 @@ public class UnitOfMeasure {
 
     private String uom;
 
+    private String description;
+
     @OneToOne
     private Ingredient ingredient;
 
@@ -35,5 +37,13 @@ public class UnitOfMeasure {
 
     public void setIngredient(Ingredient ingredient) {
         this.ingredient = ingredient;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
